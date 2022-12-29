@@ -4,11 +4,11 @@ function onSearch() {
         .then(response => response.json())
         .then(
             (element => {
-                (document.querySelector('.firstGif').src = element.data[0].images.downsized_large.url),
-                (document.querySelector('.secondGif').src = element.data[1].images.downsized_large.url),
-                (document.querySelector('.thirdGif').src = element.data[2].images.downsized_large.url),
-                (document.querySelector('.fourthGif').src = element.data[3].images.downsized_large.url),
-                (document.querySelector('.fifthGif').src = element.data[4].images.downsized_large.url)
+                (document.querySelector('.firstGif').src = element.data[0].images.original.url),
+                (document.querySelector('.secondGif').src = element.data[1].images.original.url),
+                (document.querySelector('.thirdGif').src = element.data[2].images.original.url),
+                (document.querySelector('.fourthGif').src = element.data[3].images.original.url),
+                (document.querySelector('.fifthGif').src = element.data[4].images.original.url)
             }))
         .catch(error => console.log(error));
 
