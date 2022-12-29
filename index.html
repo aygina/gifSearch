@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="normalize" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=PT+Sans&display=swap"
+        rel="stylesheet">
+    <title>notes</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="form">
+            <h2>Поиск гифок</h2>
+            <p>Сделайте форму поиска по GIF-кам к открытому API https://developers.giphy.com/.
+                Используйте GET-запрос с параметрами в строке адреса. Страница должна выводить не более 5 картинок
+                одновременно.</p>
+            <div class="search">
+                <div>Поиск:</div>
+                <input type="text" name="parameter" id="parameter">
+                <button onclick="onSearch()">Погнали!</button>
+            </div>
+
+            <div class="hideGifs">
+                <div class="gifs">
+                    <img class="firstGif" src="" alt="gif" width="220">
+                    <img class="secondGif" src="" alt="gif" width="220">
+                    <img class="thirdGif" src="" alt="gif" width="220">
+                    <img class="fourthGif" src="" alt="gif" width="220">
+                    <img class="fifthGif" src="" alt="gif" width="220">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
